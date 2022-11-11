@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Parameters</title>
+</head>
+<body>
+  <h3>Rest Parameters</h3>
+  <script>
+    //es5
+    // function sum(a,b,c,d){
+    //       console.log(a+b+c+d);
+    // }
+    // sum(1,2,3,4);
+
+    //es6 rest parameters
+    // function sum(...input){
+    //     console.log(...input);
+    //     let total=0;
+    //     for(let i of input){
+    //         total+=i;
+    //     }
+    //     console.log(total);
+    // }
+    // sum(1,2,3,4,5);
+
+
+    function show(a,b,...c){
+      console.log(`${a} ${b}`);
+      console.log(c);
+      console.log(c[0]);
+      console.log(c.length);
+      console.log(c.indexOf('yovraj'));
+    }
+    show('sonu','kushwah','honney','sona','yovraj');
+    
+    
+    //ouput this -
+    /*
+     sonu kushwah
+     (3) ['honney', 'sona', 'yovraj']
+     honney
+      3
+      2
+    */
+
+
+  </script>    
+</body>
+</html>
